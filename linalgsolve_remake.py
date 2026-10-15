@@ -1,3 +1,5 @@
+import numpy as np
+
 def luke_linalgsolve(A, b):
 
     """

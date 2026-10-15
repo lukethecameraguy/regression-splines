@@ -1,5 +1,7 @@
 from linalgsolve_remake import luke_linalgsolve
 
+import numpy as np
+
 def make_coefficients(x, y):
     """Returns the a, b, c, d vectors for the cubic splines with
     natural boundary conditions.

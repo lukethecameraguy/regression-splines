@@ -1,14 +1,16 @@
 from linalgsolve_remake import luke_linalgsolve
 
+import numpy as np
 
-def reg_plot(knots, y):
-    """calculates a cubic regression spline for the global variable
-    x and the input y using the knot values given. knot should be
+import matplotlib as plt
+
+def reg_plot(x, knots, y):
+    """calculates a cubic regression spline, knot should be
     a subvector of x
 
     Parameters
     ----------
-    knots, y : np arrays
+    x, knots, y : np arrays
 
     Returns
     -------
@@ -17,7 +19,7 @@ def reg_plot(knots, y):
 
     #A needs a leading column of 1's to account for the matrix multiplcation down the line
 
-    n = len(x) #returns size of x as a scalar, this case it is 13
+    n = len(x) #returns size of x as a scalar
 
     K = len(knots) #returns size of knots array
 
